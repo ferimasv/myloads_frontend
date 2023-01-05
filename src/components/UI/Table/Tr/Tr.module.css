@@ -1,0 +1,8 @@
+.tr {
+    padding: 0.75rem;
+    font-family: inherit;
+}
+
+.striped {
+    background-color: #f2f2f2;
+}

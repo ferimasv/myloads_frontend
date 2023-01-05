@@ -1,0 +1,6 @@
+.block {
+    width: 100%;
+    min-height: 20px;
+    background-color: var(--color--white);
+    border-radius: 3px;
+}

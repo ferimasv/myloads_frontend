@@ -16,22 +16,25 @@
     --color--black: #000000;
     --color--dark: #231f20;
 
+    --color--blue-30: #1d5d90;
     --color--blue-40: #1767de;
     --color--blue-50: #007bff;
     --color--blue-60: #047aef;
+    --color--blue-70: #1188df;
+    --color--blue-80: #7abdff;
     --color--blue-90: #ecf5ff;
 
     --color--neutral-0: #000000;
     --color--neutral-10: #1a1a1a;
     --color--neutral-20: #333333;
     --color--neutral-30: #4d4d4d;
-    --color--neutral-40: #666666;
+    --color--neutral-40: #616161;
     --color--neutral-50: #808080;
     --color--neutral-60: #9a9a9a;
     --color--neutral-70: #b3b3b3;
     --color--neutral-80: #cdcdcd;
-    --color--neutral-90: #e6e6e6;
-    --color--neutral-95: #f3f3f3;
+    --color--neutral-90: #e5e5e5;
+    --color--neutral-95: #f2f2f2;
     --color--neutral-99: #fdfdfd;
     --color--neutral-100: #FFFFFF;
 
@@ -42,17 +45,20 @@
     --color--danger: var(--color--red);
     --color--light: #d7d7d7;
 
-    --color--primary: #007bff;
-    --color--primary-hovered: #1767de;
+    --color--primary: var(--color--blue-50);
+    --color--primary-hovered: var(--color--blue-40);
+    --color--primary-border: var(--color--blue-80);
     --color--on-primary: var(--color--neutral-90);
-    --color--primary-container: #ecf5ff;
-    --color--on-primary-container: var(--color--primary);
+    --color--primary-container: var(--color--blue-90);
+    --color--on-primary-container: var(--color--blue-60);
 
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
+
+    --max-width: 1440px;
 
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

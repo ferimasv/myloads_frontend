@@ -1,0 +1,48 @@
+.label {
+    --size--checkbox: 20px;
+    --size--border: 1px;
+    --size--flag:  calc(var(--size--checkbox) - 2 * var(--size--border));
+    padding-left: var(--size--checkbox);
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox:focus + .custom,
+.checkbox:active + .custom,
+.checkbox:target + .custom
+
+{
+    box-shadow: 0 0 3px 2px rgb(0 0 0 / 25%);
+}
+
+.custom {
+    margin-left: calc(0px - var(--size--checkbox));
+    position: absolute;
+    width: var(--size--checkbox);
+    height: var(--size--checkbox);
+    background-color: var(--color--primary-container);
+    border: 1px solid var(--color--primary);
+    border-radius: calc(var(--size--checkbox) / 4);
+    cursor: pointer;
+
+}
+
+.checked {
+    background-color: var(--color--primary);
+    border-color: var(--color--primary);
+    background-image: url(../icons/check.svg);
+    background-repeat: no-repeat;
+    background-size: var(--size--flag);
+    background-position: 0 0;
+    transition: background-color .2s ease-in;
+}
+
+.disabled {
+    background-color: var(--color--primary-container);
+    border: 1px solid var(--color--primary);
+}
