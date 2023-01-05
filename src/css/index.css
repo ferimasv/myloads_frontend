@@ -1,0 +1,74 @@
+:root {
+    --color--blue: #007bff;
+    --color--light-blue: #ecf5ff;
+    --color--indigo: #6610f2;
+    --color--purple: #6f42c1;
+    --color--pink: #e83e8c;
+    --color--red: #dc3545;
+    --color--orange: #fd7e14;
+    --color--yellow: #ffc107;
+    --color--green: #28a745;
+    --color--teal: #20c997;
+    --color--cyan: #17a2b8;
+    --color--white: #ffffff;
+    --color--gray: #6c757d;
+    --color--gray-dark: #343a40;
+    --color--black: #000000;
+    --color--dark: #231f20;
+
+    --color--blue-30: #1d5d90;
+    --color--blue-40: #1767de;
+    --color--blue-50: #007bff;
+    --color--blue-60: #047aef;
+    --color--blue-70: #1188df;
+    --color--blue-80: #7abdff;
+    --color--blue-90: #ecf5ff;
+
+    --color--neutral-0: #000000;
+    --color--neutral-10: #1a1a1a;
+    --color--neutral-20: #333333;
+    --color--neutral-30: #4d4d4d;
+    --color--neutral-40: #616161;
+    --color--neutral-50: #808080;
+    --color--neutral-60: #9a9a9a;
+    --color--neutral-70: #b3b3b3;
+    --color--neutral-80: #cdcdcd;
+    --color--neutral-90: #e5e5e5;
+    --color--neutral-95: #f2f2f2;
+    --color--neutral-99: #fdfdfd;
+    --color--neutral-100: #FFFFFF;
+
+    --color--secondary: var(--color--gray);
+    --color--success: var(--color--green);
+    --color--info: var(--color--cyan);
+    --color--warning: var(--color--yellow);
+    --color--danger: var(--color--red);
+    --color--light: #d7d7d7;
+
+    --color--primary: var(--color--blue-50);
+    --color--primary-hovered: var(--color--blue-40);
+    --color--primary-border: var(--color--blue-80);
+    --color--on-primary: var(--color--neutral-90);
+    --color--primary-container: var(--color--blue-90);
+    --color--on-primary-container: var(--color--blue-60);
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    --max-width: 1440px;
+
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family: IBM Plex Sans,sans-serif!important;
+    --font-weight-bold: 600;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

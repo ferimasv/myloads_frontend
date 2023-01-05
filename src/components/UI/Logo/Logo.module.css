@@ -1,0 +1,22 @@
+.logo {
+    position: relative;
+    /*float: left; */
+    width: 149px;
+    height: 32px;
+    background-image: url("logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 39px;
+    background-position-y: 0;
+}
+
+.logo::before { /*float: left;*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url('logo-icon.svg');
+    background-repeat: no-repeat;
+}

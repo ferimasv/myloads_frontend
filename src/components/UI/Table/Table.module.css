@@ -1,0 +1,15 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: IBM Plex Sans,sans-serif!important;
+    font-size: 0.88rem;
+    text-align: left;
+}
+
+.thead {
+    font-family: inherit;
+}
+
+.tbody {
+    font-family: inherit;
+}

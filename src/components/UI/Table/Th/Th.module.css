@@ -1,0 +1,7 @@
+.th {
+    padding: 0.75rem;
+    vertical-align: middle!important;
+    color: var(--color--neutral-40);
+    font-weight: 400;
+    font-family: inherit;
+}
