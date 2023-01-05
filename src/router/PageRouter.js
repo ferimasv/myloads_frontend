@@ -3,12 +3,17 @@ import React from "react";
 import Profile from "../pages/Profile/Profile";
 import Employees from "../pages/Employees/Employees";
 import Statistic from "../pages/Statistic/Statistic";
+import Empty from "../pages/Empty/Empty";
 
 export const pages = createBrowserRouter([
     {
         path: '/product/profile',
         element: <Profile/>,
         children: [
+            {
+                path: "",
+                element: <Empty/>,
+            },
             {
                 path: "employees",
                 element: <Employees/>,
@@ -19,7 +24,7 @@ export const pages = createBrowserRouter([
             },
             {
                 path: '*',
-                element: <Navigate to={'employees'} replace={true}/>
+                element: <Navigate to="" replace={true}/>
             },
         ]
     },
