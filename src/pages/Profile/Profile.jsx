@@ -15,7 +15,9 @@ const Profile = () => {
                     <Tab to="statistic">Статистика</Tab>
                 </div>
                 <Block>
-                    <Outlet/>
+                    <div className={classes.block_inner}>
+                        <Outlet/>
+                    </div>
                 </Block>
             </div>
         </div>

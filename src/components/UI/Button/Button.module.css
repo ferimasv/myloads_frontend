@@ -1,5 +1,12 @@
-button + button {
-    margin-left: 8px;
+.big {
+    min-height: 35px;
+    height: auto;
+    padding: 10px 20px;
+
+}
+
+.small {
+
 }
 
 .primary {
@@ -38,15 +45,5 @@ button + button {
 .secondary:hover {
     color: var(--color--primary-container);
     background: var(--color--on-primary-container);
-}
-
-.big {
-    min-height: 35px;
-    height: auto;
-    padding: 10px 20px;
-}
-
-.small {
-
 }
 

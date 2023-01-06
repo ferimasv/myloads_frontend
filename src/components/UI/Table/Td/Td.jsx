@@ -4,8 +4,8 @@ import classes from './Td.module.css';
 const Td = ({ children, ...props }) => {
     return (
         <td
-            className={classes.td}
             {...props}
+            className={classes.td}
         >{children}</td>
     );
 };

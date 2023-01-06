@@ -1,0 +1,28 @@
+.company_status_1 {
+    padding-left: 2.5rem;
+}
+
+.company_status_2 {
+    padding-left: 1.5rem;
+}
+
+.company_status_3 {
+
+}
+
+.buttons_container {
+    text-align: right;
+}
+
+.buttons_container > Button + Button {
+    margin-left: 7px;
+}
+
+.status {
+    color: darkgrey;
+}
+
+.checkbox__outer {
+    width: 20px;
+    /*padding: 5px;*/
+}

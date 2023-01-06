@@ -7,9 +7,9 @@ const Table = ({ head, children }) => {
     return (
         <table className={classes.table}>
             <thead className={classes.thead}>
-                <Tr>
-                 {head?.map((item) => <Th>{item}</Th>)}
-                </Tr>
+            <Tr>
+                {head?.map((item) => <Th style={item === "" ? {width: '0'} : {}}>{item}</Th>)}
+            </Tr>
             </thead>
             <tbody className={classes.tbody}>
                 {children}

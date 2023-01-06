@@ -5,7 +5,6 @@ import classNames from "../../../helpers/classNames";
 const Checkbox = ({...props}) => {
     const { checked, disabled } = props;
     const css = classNames( classes.custom, (checked ? classes.checked : ''), (disabled ? classes.disabled : '')  )
-    console.log(props)
     return (
         <label className={classes.label}>
             <input {...props} className={classes.checkbox} type="checkbox"/>
