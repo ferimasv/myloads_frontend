@@ -1,0 +1,9 @@
+.block__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.button__outer {
+    width: 200px;
+}
