@@ -35,7 +35,7 @@
 .checked {
     background-color: var(--color--primary);
     border-color: var(--color--primary);
-    background-image: url(../icons/check.svg);
+    background-image: url(../icons/check.png);
     background-repeat: no-repeat;
     background-size: var(--size--flag);
     background-position: 0 0;

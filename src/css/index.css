@@ -48,7 +48,7 @@
     --color--primary: var(--color--blue-50);
     --color--primary-hovered: var(--color--blue-40);
     --color--primary-border: var(--color--blue-80);
-    --color--on-primary: var(--color--neutral-90);
+    --color--on-primary: var(--color--neutral-100);
     --color--primary-container: var(--color--blue-90);
     --color--on-primary-container: var(--color--blue-60);
 
