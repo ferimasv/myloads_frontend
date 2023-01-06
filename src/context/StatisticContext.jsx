@@ -3,6 +3,9 @@ import React, {createContext, useContext, useState} from 'react';
 const Statistic = createContext(null);
 
 const StatisticContext = ({children}) => {
+    const [ startDate, setStartDate ] = useState(Date.now());
+    const [ endDate, setEndDate ] = useState(Date.now());
+
     const [ carrier, setCarrier ] = useState([
         { id: 1, company_info: { name: "OOO"}, carrier_info: { bidding_for_goods: "1", victory: "1", active_cargoes: "1", deleted_cargo: "1", losses: "1", average_starting_price: "1", average_final_freight_price: "1",  } },
         { id: 3, company_info: { name: "OOO"}, carrier_info: { bidding_for_goods: "1", victory: "1", active_cargoes: "1", deleted_cargo: "1", losses: "1", average_starting_price: "1", average_final_freight_price: "1",  } },
@@ -20,6 +23,8 @@ const StatisticContext = ({children}) => {
             value={{
                 carrier, setCarrier,
                 owner, setOwner,
+                startDate, setStartDate,
+                endDate, setEndDate,
             }}
         >{children}</Statistic.Provider>
     );

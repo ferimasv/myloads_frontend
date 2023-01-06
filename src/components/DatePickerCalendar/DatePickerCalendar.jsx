@@ -5,18 +5,13 @@ import Select from "../UI/Select/Select";
 import ru from "date-fns/locale/ru";
 import {add} from "date-fns";
 import DatePickerRangeTwoMonth from "./DatePickerRangeTwoMonth";
+import {StatisticState} from "../../context/StatisticContext";
 
 registerLocale("ru", ru);
 
 const DatePickerCalendar = () => {
     const [ selected, setSelected ] = useState("1")
-    const [ startDate, setStartDate ] = useState(Date.now());
-    const [ endDate, setEndDate ] = useState(Date.now());
-
-    useEffect(() => {
-        const today = Date.now();
-        setStartDate(today); setEndDate(today);
-    }, [])
+    const { startDate, setStartDate, endDate, setEndDate, } = StatisticState();
 
     function changeDate(value) {
         let start, end;
@@ -44,7 +39,6 @@ const DatePickerCalendar = () => {
                 start = startMouth; end = yesterday;
                 break;
             case "5":
-                //TODO: за все время это сколько?
                 const endTime = today;
                 const startTime = new Date('01/01/2018');
                 start = startTime; end = endTime;
