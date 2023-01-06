@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './Empty.module.css';
+import classes from './EmptyProfile.module.css';
 
-const Empty = () => {
+const EmptyProfile = () => {
     return (
         <div className={classes.empty}>Чтобы посмотреть информацию, перейдите по вкладкам выше</div>
     );
 };
 
-export default Empty;
+export default EmptyProfile;

@@ -3,7 +3,10 @@ import React from "react";
 import Profile from "../pages/Profile/Profile";
 import Employees from "../pages/Employees/Employees";
 import Statistic from "../pages/Statistic/Statistic";
-import Empty from "../pages/Empty/Empty";
+import EmptyProfile from "../pages/EmptyProfile/EmptyProfile";
+import StatisticCarrierTable from "../components/StatisticCarrierTable/StatisticCarrierTable";
+import StatisticOwnerTable from "../components/StatisticOwnerTable/StatisticOwnerTable";
+import EmptyStatistic from "../pages/EmptyStatistic/EmptyStatistic";
 
 export const pages = createBrowserRouter([
     {
@@ -12,7 +15,7 @@ export const pages = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <Empty/>,
+                element: <EmptyProfile/>,
             },
             {
                 path: "employees",
@@ -21,6 +24,24 @@ export const pages = createBrowserRouter([
             {
                 path: "statistic",
                 element: <Statistic/>,
+                children: [
+                    {
+                        path: "",
+                        element: <EmptyStatistic/>,
+                    },
+                    {
+                        path: "carrier",
+                        element: <StatisticCarrierTable/>,
+                    },
+                    {
+                        path: "owner",
+                        element: <StatisticOwnerTable/>,
+                    },
+                    {
+                        path: '*',
+                        element: <Navigate to="" replace={true}/>
+                    },
+                ]
             },
             {
                 path: '*',

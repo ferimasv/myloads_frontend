@@ -1,0 +1,10 @@
+.statistic_table {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-height: 314px;
+}
+
+.content {
+    width: 100%;
+}
