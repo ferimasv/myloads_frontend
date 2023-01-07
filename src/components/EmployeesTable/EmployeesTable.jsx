@@ -10,7 +10,7 @@ import {EmployeesState} from "../../context/EmployeesContext";
 import Th from "../UI/Table/Th/Th";
 
 const EmployeesTable = () => {
-    const { employees, setEmployees, isEditMode, setIsEditMode, toggleMode, calculationCountSelected } = EmployeesState();
+    const { employees, isEditMode, toggleMode, calculationCountSelected } = EmployeesState();
     const head = [ 'Полное имя', 'Должность', 'Руководитель', 'Телефон', 'Контактный e-mail', ];
 
     function changeSelected(e, item) {
