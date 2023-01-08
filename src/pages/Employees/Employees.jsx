@@ -9,8 +9,8 @@ const Employees = () => {
 
     async function useEmployees() {
         const {persons} = await useFetch('/persons');
-        console.log(persons);
-        setEmployees(persons);
+        const _persons = persons.filter(item => item.user_info.first_name !== "" && item.user_info.position_person !== "");
+        setEmployees(_persons);
     }
 
     useEffect(() => {

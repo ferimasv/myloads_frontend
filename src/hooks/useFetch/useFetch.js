@@ -1,6 +1,6 @@
 const {useEffect} = require("react");
 
-const URL = 'http://26.252.6.100:17850/api';
+const URL = 'http://26.252.6.100:17500/api';
 
 
 async function useFetch(path = '', init = {}) {
