@@ -13,7 +13,6 @@ const Statistic = () => {
         const { carrier } = await useFetch('/auth/analytic/currier', {
             headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzM0NDIwNDIsInN1YiI6IjIyIn0.UxB5TN2UEv7ALQw1noCOlBdUQyhohunxJHCyPSnl4ss'},
         });
-
         setCarrier(carrier);
     }
 
@@ -34,12 +33,10 @@ const Statistic = () => {
         <div>
             <div className={classes.block__inner}>
                 <DatePickerCalendar/>
-
                 <div className={classes.button__outer}>
                     <Button onClick={useStatistic}>Запросить</Button>
                 </div>
             </div>
-
             <StatisticTable/>
         </div>
     );
