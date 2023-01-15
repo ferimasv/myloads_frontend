@@ -50,18 +50,18 @@ npm start
 #### Сотрудники
 При открытии страницы происходит запрос на данные сотрудников компаний
 
-![img.png](img.png)
+![img.png](readme/img.png)
 
 #### Статистика
 После нажатия на "Запрос" получаем данные по компаниям
 
-![img_1.png](img_1.png)
+![img_1.png](readme/img_1.png)
 
-![img_2.png](img_2.png)
+![img_2.png](readme/img_2.png)
 
 Фильтр
 
-![img_3.png](img_3.png)
+![img_3.png](readme/img_3.png)
 
 ### Backend:
 - Golang
