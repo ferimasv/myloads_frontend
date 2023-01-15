@@ -2,13 +2,13 @@ import React, {useEffect} from 'react';
 import EmployeesInfo from "../../components/EmployeesInfo/EmployeesInfo";
 import EmployeesTable from "../../components/EmployeesTable/EmployeesTable";
 import {EmployeesState} from "../../context/EmployeesContext";
-import getData from "../../hooks/getData";
+import fetchData from "../../hooks/fetchData";
 
 const Employees = () => {
     const { setEmployees } = EmployeesState();
 
     async function useEmployees() {
-        const { persons } = await getData('/persons');
+        const { persons } = await fetchData('/persons');
         console.log(persons)
         const _persons = persons.filter(item => item.user_info.first_name !== "" && item.user_info.position_person !== "");
         setEmployees(_persons);
