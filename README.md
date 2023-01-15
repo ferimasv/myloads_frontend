@@ -43,8 +43,25 @@ npm start
 ### Frontend:
 - JavaScript
 - React
+- верстка согласно макету
 
 [< Ссылка на репозиторий >](https://github.com/ferimasv/myloads_frontend)
+
+#### Сотрудники
+При открытии страницы происходит запрос на данные сотрудников компаний
+
+![img.png](img.png)
+
+#### Статистика
+После нажатия на "Запрос" получаем данные по компаниям
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
+Фильтр
+
+![img_3.png](img_3.png)
 
 ### Backend:
 - Golang
