@@ -8,8 +8,6 @@ import classes from "./StatisticOwnerTable.module.css";
 
 const StatisticOwnerTable = () => {
     const { owner } = StatisticState();
-    console.log('12412')
-
     return (
         <div>
             <div className={classes.head}>

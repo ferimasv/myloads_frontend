@@ -38,6 +38,20 @@
     --color--neutral-99: #fdfdfd;
     --color--neutral-100: #FFFFFF;
 
+    --color--error-0: #000000;
+    --color--error-10: #410E0B;
+    --color--error-20: #601410;
+    --color--error-30: #8C1D18;
+    --color--error-40: #B3261E;
+    --color--error-50: #DC362E;
+    --color--error-60: #E46962;
+    --color--error-70: #EC928E;
+    --color--error-80: #F2B8B5;
+    --color--error-90: #F9DEDC;
+    --color--error-95: #FCEEEE;
+    --color--error-99: #FFFBF9;
+    --color--error-100: #FFFFFF;
+
     --color--secondary: var(--color--gray);
     --color--success: var(--color--green);
     --color--info: var(--color--cyan);
