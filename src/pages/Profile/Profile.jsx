@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Block from "../../components/UI/Block/Block";
 import {Outlet} from "react-router-dom";
 import Tab from "../../components/UI/Tab/Tab";
+import Error from "../../components/Error/Error";
 
 const Profile = () => {
     return (
@@ -20,6 +21,7 @@ const Profile = () => {
                     </div>
                 </Block>
             </div>
+            <Error/>
         </div>
     );
 };
